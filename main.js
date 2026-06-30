@@ -130,8 +130,7 @@ const displayCartData = () => {
     const cartCounter = document.querySelector('.cart-counter')
     const cartGroupContainer = document.querySelector('.cart-group-item')
 
-    if (cartCount > 0)
-        cartCounter.innerText = `Total Drinks Added: ${cartCount}`
+    cartCounter.innerText = `Total Drinks Added: ${cartCount}`
 
     if (cartCount === 0) {
         cartGroupContainer.innerHTML = `
