@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Elms Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.main-section {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    overflow: hidden;
+}
+
+.left-content {
+    flex: 1;
+    /* background-color: #ffc107; */
+}
+.right-content {
+    width: 30%;
+    /* background-color: #dc3545; */
+}
+.cocktail-wrapper {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+    .main-section {
+        height: auto;
+        width: 100dvw;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+    .right-content {
+        width: 100%;
+    }
+}

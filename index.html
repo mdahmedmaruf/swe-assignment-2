@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Cocktail</title>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="main-section">
+            <div class="left-content bg-body-tertiary">
+                <div class="container">
+                    <nav class="navbar sticky-top navbar-expand-lg p-4">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fs-1 text-secondary mb-0 pb-0" href="#"><i class="bi bi-cup-straw"></i></a>
+                            <form class="d-flex w-75" role="search">
+                                <input class="form-control me-2 outline-none border-0 shadow-none search-drinks" placeholder="Search" aria-label="Search"/>
+                                <button class="btn btn-outline-success search-btn" type="submit">Search</button>
+                            </form>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="cocktail-wrapper pb-5">
+                        <div class="row row-cols-md-2 row-cols-lg-3 g-3 cocktail-container p-5 mb-5 overflow-y-scroll"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-content position-relative">
+                <div class="cart-group-container py-5 px-4">
+                    <div class="cart-counter mb-4"></div>
+                    <div class="cart-group-item"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div class="btn btn-success" data-bs-toggle="modal" data-bs-target="#detailsModal">Details</div> -->
+        <!-- drinks details modal -->
+        <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content"></div>
+            </div>
+        </div>
+
+        <!-- toaster -->
+         <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-body text-light bg-success rounded shadow"></div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </body>
+</html>
