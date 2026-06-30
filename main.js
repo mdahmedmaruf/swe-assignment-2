@@ -3,6 +3,9 @@ let cartCount = 0
 const maxCartItem = 7
 
 const loadData = async () => {
+    const spinner = document.querySelector('spinner-loading')
+    if (spinner) spinner.style.display = 'block'
+
     const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=m'
     let response = await fetch(url)
 
@@ -13,6 +16,9 @@ const loadData = async () => {
 
     let data = await response.json()
     allDrinks = data.drinks
+
+    if (spinner) spinner.style.display = 'none'
+
     displayDrinksData(allDrinks)
     displayCartData()
 }
